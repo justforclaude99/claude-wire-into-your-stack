@@ -45,15 +45,22 @@ The hook automatically runs lint after every file edit to catch issues immediate
 
 ## Headless Task
 
-## 5. Headless Task
-
 Command:
 
-claude -p "Summarize this project in 3 bullet points" --allowedTools Bash(ls),Bash(cat)
+claude -p "Summarize this project in 3 bullet points" \
+  --allowedTools Bash(ls) \
+  --allowedTools Bash(cat)
 
 Allowed tools:
 - Bash(ls)
 - Bash(cat)
 
 Reason:
-The task required reading project files to understand the application structure and create an accurate summary. I limited access to read-only tools that were necessary for inspecting the repository contents.
+
+The task required reading the project structure and file contents to generate an accurate summary.
+
+I allowed only:
+- Bash(ls) to inspect the repository structure
+- Bash(cat) to read project files
+
+This limited Claude to the minimum read-only permissions required for the task.
