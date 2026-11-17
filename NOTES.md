@@ -45,14 +45,15 @@ The hook automatically runs lint after every file edit to catch issues immediate
 
 ## Headless Task
 
-Headless task
+## 5. Headless Task
 
 Command:
 
-claude -p "Summarize this project in 3 bullet points" --allowedTools Bash(git status)
+claude -p "Summarize this project in 3 bullet points" --allowedTools Bash(ls),Bash(cat)
 
 Allowed tools:
-- Bash(git status)
+- Bash(ls)
+- Bash(cat)
 
 Reason:
-The task only needed repository status information, so I limited access to the minimum required tool.
+The task required reading project files to understand the application structure and create an accurate summary. I limited access to read-only tools that were necessary for inspecting the repository contents.

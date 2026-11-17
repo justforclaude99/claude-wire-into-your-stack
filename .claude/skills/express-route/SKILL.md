@@ -1,12 +1,9 @@
 # Express Route Pattern
 
-## Description
-
-Use this skill when:
-- creating a new Express route
-- adding a new API endpoint
-- creating route tests
-- following the project's route structure
+---
+name: express-route
+description: Trigger this skill when the user asks to create a new endpoint, add or modify an Express route, generate route tests, or implement API functionality in the routes directory. Follow the project's established route and testing conventions.
+---
 
 ## Instructions
 
