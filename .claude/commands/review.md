@@ -1,4 +1,5 @@
 ---
+description: Review a project file
 argument-hint: <file>
 ---
 
